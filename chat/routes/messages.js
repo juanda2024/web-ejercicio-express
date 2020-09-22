@@ -5,16 +5,13 @@ const Joi = require('joi');
 
 const estructura_mensaje = Joi.object({
     ts: Joi.string()
-        .alphanum()
         .required(),
 
     message: Joi.string()
-        .alphanum()
         .min(5)
         .required(),
 
     author: Joi.string()
-        .alphanum()
         .required(),
 });
 
